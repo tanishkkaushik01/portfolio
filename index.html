@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanishk Kaushik's Portfolio</title>
+    <title>Tanishk Kaushik - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
         header {
             background-color: #333;
@@ -16,79 +22,68 @@
             padding: 20px;
             text-align: center;
         }
-        section {
-            padding: 20px;
+        nav {
+            text-align: center;
+            margin-top: 20px;
         }
-        h1 {
-            margin-bottom: 10px;
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
         }
         h2 {
-            margin-top: 10px;
+            margin-top: 0;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
+        .project {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Tanishk Kaushik's Portfolio</h1>
+        <h1>Tanishk Kaushik</h1>
+        <p>Computer Science Student | Cyber Security Enthusiast | Full Stack Developer</p>
     </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am Tanishk Kaushik, currently pursuing Bachelor's in Computer Science with specialization in Cyber Security at Bharath Institute of Higher Education and Research. I have knowledge in cyber security, full stack web development, Java programming, and basics of trading in the stock market. I completed a four-month internship in Cybersecurity and Ethical Hacking at HEXAIND TECHNOLOGIES AND SERVICES, where I worked on a project titled "SecureText: Enhancing Communication Privacy through Text Encryption Using Cryptographic Algorithms". Currently, I am doing a one-month virtual internship in Java programming at Codsoft company. Additionally, I have completed the B certificate in the National Cadet Corps.
-        </p>
-    </section>
-
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Cyber Security</li>
-            <li>Full Stack Web Development</li>
-            <li>Java Programming</li>
-            <li>Stock Market Trading</li>
-            <li>Ethical Hacking</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>IBM Certification in Cyber Security (in progress)</li>
-            <li>Full Stack Web Development Bootcamp (in progress)</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Work Experience</h2>
-        <p>
-            <strong>Internship at HEXAIND TECHNOLOGIES AND SERVICES</strong><br>
-            Duration: 4 months<br>
-            Project: SecureText: Enhancing Communication Privacy through Text Encryption Using Cryptographic Algorithms
-        </p>
-        <p>
-            <strong>Virtual Internship at Codsoft</strong><br>
-            Duration: 1 month<br>
-            Project: Java Programming
-        </p>
-    </section>
-
-    <section>
-        <h2>Extracurricular Activities</h2>
-        <p>National Cadet Corps - B Certificate</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Tanishk Kaushik</p>
-    </footer>
-
+    <div class="container">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a Bachelor's in Computer Science student specializing in Cyber Security. I have experience in full stack web development, Java programming, and ethical hacking. Currently, I am honing my skills through internships and certifications.</p>
+            <p>In my free time, I enjoy learning about the stock market and trading.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>SecureText: Enhancing Communication Privacy through Text Encryption</h3>
+                <p>Description: Developed a secure text communication application using cryptographic algorithms.</p>
+                <p>Company: HEXAIND TECHNOLOGIES AND SERVICES</p>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: tanishkkaushik02@gmail.com</p>
+            <!-- Add more contact information here -->
+        </section>
+    </div>
 </body>
 </html>
 
